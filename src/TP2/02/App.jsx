@@ -4,7 +4,6 @@ Implemente um componente simples utilizando React JS que representa um portfóli
 4 Imagens do Produto escolhido; 
 Descrição do produto escolhido. 
 */
-import "./app.css";
 import img1 from "./img/img1.png";
 import img2 from "./img/img2.png";
 import img3 from "./img/img3.png";
@@ -14,15 +13,54 @@ const miniImages = [img2, img3, img4];
 
 function ProductPage() {
   return (
-    <section>
-      <div class="mini-images">
+    <section
+      style={{
+        padding: "30px",
+      }}
+    >
+      <div
+        style={{
+          display: "flex",
+          width: "100%",
+          justifyContent: "space-between",
+          gap: "30px",
+        }}
+      >
         {miniImages.map((img, i) => (
-          <img key={i} src={img} alt="example" />
+          <img
+            key={i}
+            src={img}
+            alt="example"
+            style={{
+              border: "2px solid black",
+              borderRadius: "5px",
+              width: "80px",
+              flex: 1,
+            }}
+          />
         ))}
       </div>
-      <div className="content-container">
-        <div>
-          <h1>Coca Cola</h1>
+      <div
+        style={{
+          display: "flex",
+          gap: "30px",
+          marginTop: "50px",
+          alignItems: "center",
+        }}
+      >
+        <div
+          style={{
+            flex: 2,
+          }}
+        >
+          <h1
+            style={{
+              fontSize: "18px",
+              marginBottom: "25px",
+            }}
+          >
+            Coca Cola
+          </h1>
 
           <p>
             Coca-Cola é um refrigerante carbonatado vendido em lojas,
@@ -36,8 +74,12 @@ function ProductPage() {
           </p>
         </div>
 
-        <div className="side-image-container">
-          <img src={img1} alt="example" />
+        <div
+          style={{
+            flex: 1.5,
+          }}
+        >
+          <img src={img1} alt="example" style={{ width: "100%" }} />
         </div>
       </div>
     </section>
