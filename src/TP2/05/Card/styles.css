@@ -1,0 +1,15 @@
+.card {
+  padding: 12px;
+  border: 2px solid gray;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.card h2 {
+  font-size: 14px;
+}
+
+.card p {
+  font-size: 14px;
+}
