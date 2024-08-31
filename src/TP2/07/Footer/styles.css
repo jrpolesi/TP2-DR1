@@ -1,0 +1,17 @@
+.footer {
+  margin-top: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid gray;
+  height: 60px;
+  text-align: center;
+  font-size: 14px;
+  padding: 10px;
+}
+
+@media screen and (min-width: 425px) {
+  .footer {
+    font-size: 16px;
+  }
+}
