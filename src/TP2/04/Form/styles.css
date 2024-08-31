@@ -1,4 +1,63 @@
-.input-container {
+.form-page {
+    padding: 50px;
+}
+
+.form-page h1 {
+    text-align: center;
+    margin: 0 0 30px;
+    font-size: 20px;
+}
+
+.form-inputs {
     display: flex;
     flex-direction: column;
+    gap: 20px;
+}
+
+.input-layout-h {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+}
+
+.input-layout-h>* {
+    flex: 1;
+}
+
+.input-label-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-label-container label {
+    font-size: 14px;
+}
+
+.input-label-container input, select, textarea {
+    border: 2px solid gray;
+    font-family: sans-serif;
+}
+
+.input-label-container input, select {
+    height: 35px;
+    text-indent: 8px;
+    color: gray;
+}
+
+.input-label-container textarea {
+    padding: 8px;
+}
+
+.form-page button {
+    display: block;
+    margin: 25px 0 0 auto;
+    padding: 10px 50px;
+    border: none;
+    background-color: black;
+    color: white;;
+}
+
+.form-page button:hover {
+    background-color: rgb(31, 31, 31);
+    cursor: pointer;
 }
