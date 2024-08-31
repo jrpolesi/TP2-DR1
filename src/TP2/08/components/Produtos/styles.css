@@ -1,0 +1,24 @@
+.produtos {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.produtos--galeria {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.galeria--fileira {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.galeria--fileira img {
+  flex: 1;
+  min-width: 0;
+  max-width: 280px;
+  object-fit: cover;
+}
