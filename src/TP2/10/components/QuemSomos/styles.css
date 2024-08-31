@@ -1,0 +1,41 @@
+.quem-somos {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.quem-somos--content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.quem-somos--content div {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.quem-somos--content img {
+  flex: 1;
+  min-width: 0px;
+  max-width: 200px;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 768px) {
+  .quem-somos--content div {
+    flex-wrap: wrap;
+  }
+
+  .quem-somos--content img {
+    min-width: 150px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .quem-somos--content div {
+    flex-direction: column;
+    align-items: center;
+  }
+}
