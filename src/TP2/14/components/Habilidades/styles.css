@@ -1,0 +1,72 @@
+.habilidades {
+  margin-top: 80px;
+}
+
+.habilidades h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.habilidades--list {
+  list-style: none;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.habilidades--list li {
+  box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  padding: 20px;
+  width: 80%;
+  max-width: 240px;
+}
+
+.habilidades--list img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.habilidades--list h3 {
+  font-size: 16px;
+  text-align: center;
+}
+
+@media screen and (min-width: 320px) {
+  .habilidades--list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    row-gap: 20px;
+  }
+
+  .habilidades--list li {
+    width: 90%;
+  }
+
+  .habilidades--list h3 {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .habilidades--list {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+
+  .habilidades--list li {
+    width: 100%;
+  }
+
+  .habilidades--list h3 {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .habilidades--list {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+  }
+}
