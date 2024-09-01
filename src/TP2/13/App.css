@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  max-width: 1000px;
+  padding-inline: 15px;
+}
+
+@media screen and (min-width: 425px) {
+  .container {
+    padding-inline: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    padding-inline: 60px;
+  }
+}

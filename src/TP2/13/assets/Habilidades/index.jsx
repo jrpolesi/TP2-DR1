@@ -1,0 +1,12 @@
+export { default as bootstrap } from "./bootstrap.png";
+export { default as css } from "./css.png";
+export { default as electron } from "./electron.png";
+export { default as html } from "./html.png";
+export { default as jquery } from "./jquery.png";
+export { default as js } from "./js.png";
+export { default as npm } from "./npm.png";
+export { default as postgres } from "./postgres.png";
+export { default as python } from "./python.png";
+export { default as react } from "./react.png";
+export { default as sqlite } from "./sqlite.png";
+export { default as ts } from "./ts.png";
