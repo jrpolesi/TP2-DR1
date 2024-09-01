@@ -1,0 +1,33 @@
+.agradecimento {
+  margin-top: 30px;
+  margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.agradecimento p {
+  font-size: 18px;
+  text-align: center;
+}
+
+.agradecimento button {
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+  color: white;
+  background-color: rgb(36, 81, 178);
+  max-width: 270px;
+  width: 100%;
+}
+
+.agradecimento button:hover {
+  background-color: rgb(26, 71, 168);
+  cursor: pointer;
+}
+
+.agradecimento button.agradecimento--button--blocked {
+  cursor: progress;
+}
